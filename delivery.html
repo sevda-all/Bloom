@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bloom</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/png">
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/style2.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@7.25.6/dist/sweetalert2.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="./index.html">
+              <img src="./images/logo.png" width="80" height="80" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <div class="menu">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="./catalog.html" 
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Bouquet catalog
+                    </a>
+                    <div class="dropdown-menu" >
+                      <a class="dropdown-item" href="./catalog.html">Flower Box</a>
+                      <a class="dropdown-item" href="./catalog.html">Author's Bouquet</a>
+                      <a class="dropdown-item" href="./catalog.html">Wedding Bouquet</a>
+                    </div>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="./delivery.html">Delivery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./price.html">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav">
+                  <li><a href="./login.html">log in</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    
+    <div class="container">
+        <div class="fresh">
+            <img src="./images/fresh.jpg" alt="">
+        </div>
+        <div class="option">
+            <div class="left">
+                <label for="bouquets"><h1>Choose a bouquet: </h1></label>
+                <select id="delivery" class="bouquet__select">
+                    <option value="">Make a choice</option>
+                    <option value="choice1">Rose Crown</option>
+                    <option value="choice2">Dreaming of Summer</option>
+                    <option value="choice3">Light cloud</option>
+                    <option value="choice4">Vibrant</option>
+                    <option value="choice5">Deep Love Vanda</option>
+                    <option value="choice6">Burgundy & Eggplant</option>
+                    <option value="choice7">Deep feelings</option>
+                    <option value="choice8">Spring Dawn</option>
+                    <option value="choice9">Vanilla dream</option>
+                </select>
+                <button class="btn_press" id="display">BUY WITH ONE-CLICK</button>                 
+            </div>
+            <div class="right">
+                <p class="message"></p>
+            </div>
+        </div>
+        <div class="hidden-area">
+            <form>
+                <input  id="name-p" class="input" type="text" placeholder="Name" required>
+                <input  id="email" class="input" type="email" placeholder="Email" required>
+                <input  id="phone" class="input" type="text" placeholder="Phone" required>
+                <textarea id="wishes" class="input" type="text" cols="20" rows="3" placeholder="Additional wishes"></textarea>
+                <div class="back">
+                    <button id="call">Send</button>
+                    <button id="hide">Cancel</button>
+                </div>  
+            </form>
+        </div>              
+    </div>
+    <div class="container">
+        <div class="example">
+            <h1>You may also like</h1>
+            <div class="row">
+                <div class="col-lg-3 col-md-5 col-sm-10"> 
+                    <img src="./images/pic1.jpg" alt="">
+                    <h4>Designer caramel bouquet</h4>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-10"> 
+                    <img src="./images/pic2.jpg" alt="">
+                    <h4>Author's bouquet with hydrangea</h4>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-10"> 
+                    <img src="./images/pic3.jpg" alt="">
+                    <h4>Bouquet morning freshness</h4>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-10"> 
+                    <img src="./images/pic4.jpg" alt="">
+                    <h4>Bouquet with lavender dianthus</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class=" col-md-5 col-sm-8 mt-sm-3 footer-about ">
+                <img class="logo-footer" src="./images/logo.png" alt="logo-footer">
+                <p>
+                  We are a young company always looking for new and creative ideas to help you with our bouquets in your
+                  everyday life.
+                </p>
+                <p><a href="./about.html">Bloom Team</a></p>
+              </div>
+              <div class=" col-md-4 col-sm-8 mt-sm-3 footer-contact">
+                <h3>Contact</h3>
+                <p><i class="fa fa-map-marker"></i> Via Rossini 10, 10124 Turin Italy</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> Phone: (998) 90 922 22 79</p>
+                <p><i class="fa fa-envelope-o" aria-hidden="true"></i> Email: <a href="#">bloom_it@gmail.com</a></p>
+                <p><i class="fa fa-skype"></i> Skype: <a href="#"> bloom_it </a></p>
+              </div>
+              <div class="col-md-3 col-sm-8 mt-sm-3 footer-social">
+                <h3 id="follow">Follow us</h3>
+                <div class="links">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-telegram"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-pinterest"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="footer-copyright">
+              <p>&copy; Designed by <a href="https://github.com/sevda-all">Sevda</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/script2.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.25.6/dist/sweetalert2.min.js"></script>
+
+</body>
+</html>

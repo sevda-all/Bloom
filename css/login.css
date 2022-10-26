@@ -1,0 +1,110 @@
+body {
+    background: #eee;
+}
+
+/*------------------------------*/
+
+#signup {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto 50px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#signup .row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#signup .col-10{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#signup a {
+    display: none;
+    text-decoration: none;
+}
+
+#signup a:hover {
+    color: black;
+}
+
+.fa{
+    font-size: 24px;
+    color: #cecece;
+}
+
+/*------------------------------*/
+
+#signup h1 {
+    position: relative;
+    font-family: Montaga;
+    color: #999;
+    text-align: center;
+    margin: 0 0 20px;
+    font-weight: 300;
+}
+
+/*------------------------------*/
+
+
+.placeholder {
+    color: #bbb;
+}
+
+#signup input {
+    margin: 10px auto;
+    padding: 15px 20px;
+    width: 90%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+
+#signup input:focus {
+    outline: 0;
+    border-color: #aaa;
+}
+
+#signup button {
+    margin: 20px auto;
+    padding: 10px 10px;
+    width: 30%;
+    cursor: pointer;
+    border: 1px solid #f5b4c2cd;
+    outline: none;
+    overflow: visible;
+    display: inline-block;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 22px;
+    background-color: #ecbac5cd;
+    text-shadow: 0 0 1px black;
+    border-radius: 35px;
+
+}
+
+#signup button:hover {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .3),
+        0 1px 0 rgba(255, 255, 255, .5) inset;
+    outline: none;
+}
+
+
+@media  (max-width: 768px) {
+    #signup {
+        width: 80%;
+    }
+    #signup button {
+        font-size: 15px;
+    }
+}
